@@ -4,6 +4,9 @@ echo  Provisioning $HOSTNAME
 
 sudo  timedatectl  set-timezone Asia/Tokyo
 
+export DEBIAN_FRONTEND=noninteractive
+sudo  -E  apt  install -y  libssl1.1
+
 sudo  apt  update
 sudo  apt  install -y  build-essential      \
     emacs  git  mercurial
