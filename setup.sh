@@ -23,8 +23,3 @@ _EOF_
 cat  << _EOF_
 vagrant  box  add  --name ${vcUser}/${boxName}  ${boxFile}
 _EOF_
-
-cat  << _EOF_
-To add package into box list, run:
-vagrant box add  --name ubuntu/bionic64-quantum  ubuntu-18.04-quantum.box
-_EOF_
